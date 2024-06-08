@@ -1,30 +1,29 @@
-name: 💡 Improvements
-description: Create a new ticket for a new feature request
+name: 💡 Shared
+description: 소통해요
 title: "🎫 [Tags] - <title>"
 
 body:
   - type: dropdown
     id: type
     attributes:
-      label: Which area of this project could be most improved?
+      label: Curriculum
       options:
-        - 📄 Documentation
-        - 👬 Pull request review
-        - ❗Bug fix
-        - 🔗 Features
-        - 💡Idea
+        - 📄 섹션 1. Object 클래스
+        - 📄 섹션 2. 불변 객체
+        - 📄 섹션 3. String 클래스
+        - 📄 섹션 4. 래퍼, Class 클래스
+        - 📄 섹션 5. 열거형 - ENUM
+        - 📄 섹션 6. 날짜와 시간
+        - 📄 섹션 7. 중첩 클래스, 내부 클래스1
+        - 📄 섹션 8. 중첩 클래스, 내부 클래스2
+        - 📄 섹션 9. 예외 처리1 - 이론
+        - 📄 섹션 10. 예외 처리2 - 실습
+        - 📄 섹션 11. 다음으로
   - type: textarea
     id: improvements-summary
     attributes:
       label: Details about changes
-      description: 추가 기능 또는 기능 수정에 대한 요구사항을 작성 해주세요.
+      description: 섹션에 대해 나눌 토픽을 작성 해주세요.
       placeholder: "자세한 설명을 적어주세요."
     validations:
       required: true
-  - type: checkboxes
-    attributes:
-      label: Required
-      options:
-        - label: Assigee 설정
-        - label: Issue label 설정
-        - label: 개선사항 내용 작성
